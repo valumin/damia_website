@@ -183,7 +183,7 @@ nav ul > li > a:hover {
 }
 
 #water-level {
-    background: url('/assets/images/wave.png');
+    background: url('assets/images/wave.png');
     background-position: 0px 350px;
     background-repeat: repeat-x;
     background-size: contain;
