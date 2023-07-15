@@ -1,0 +1,404 @@
+/* Font Import */
+@import url('https://web.archive.org/web/20220128192730cs_/https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;900&display=swap');
+@import url('https://web.archive.org/web/20220128192730cs_/https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+nav ul {
+    padding: 0;
+    margin-top: 20px;
+    float: right;
+}
+
+nav ul > li {
+    display: inline-block;
+    margin-left: 50px;
+}
+nav ul > li > a {
+    font-family: 'Open Sans';
+    display: inline-block;
+    color: #FFFFFFB3;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px 8px;
+    border-radius: 3px;
+    transition: transform 0.3s, padding 0.3s, background-color 0.3s;
+    text-transform: capitalize;
+}
+nav ul > li > a:hover {
+    background-color: #FFFFFF33;
+    transform: translateY(5px);
+    color: #FFFFFFB3;
+}
+
+.site-logo {
+    float: left;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.site-logo img {
+    width: 70%;
+}
+
+.page {
+    box-sizing: border-box;
+    padding: 55px 0px 0px 0px;
+    min-height: 100vh;
+}
+
+.dynamic-page {
+    box-sizing: border-box;
+    padding: 55px 0px 150px 0px;
+    height: auto;
+}
+
+.centered-title-widget {
+    text-align: center;
+}
+
+.centered-title-widget > h1 {
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.centered-title-widget > p {
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -20px;
+}
+
+.tankspy-title-widget {
+    color: #fff;
+    text-align: left;
+    width: 50%;
+}
+
+.tankspy-title-widget > h1 {
+    font-size: 5.5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.tankspy-title-widget > p {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -20px;
+}
+
+.video-title-widget {
+    text-align: center;
+}
+
+.video-title-widget > h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.video-title-widget > p {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -20px;
+}
+
+
+.framed-button {
+    display: inline-block;
+    outline: none;
+    border: 2px solid #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    margin-top: 5%;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.framed-button:hover {
+    color: #fff;
+    background-color: rgba(255,255,2550,0.2);
+}
+.framed-button.light {
+    border-color: #fff;
+    color: #fff;
+    background: none;
+}
+.framed-button.light:hover {
+    border-color: #fff;
+    color: #fff;
+    background-color: rgba(255,255,2550,0.2);
+}
+#pageOne {
+    background-color: #1e1e1e;
+    background-image: url('/web/20220128192730im_/https://damia.tech/assets/images/circuit-board-diagram-01.svg');
+    background-position: bottom right 25%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+#pageTwo {
+    position: relative;
+    background-color: #0378ad;
+    padding: 120px 0px 200px 0px;
+}
+
+.container-split {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 55px 0px 0px 0px;
+    margin: 0;
+}
+
+#tankspy-image {
+    margin-top: 50px;
+    max-width: 70%;
+}
+
+#tankspy-page {
+    margin-top: 80px;
+    width: 50%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    height: 30vh;
+}
+
+#tank-half {
+    background-color: #1e1e1e;
+}
+
+#level-meter {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background-color: #fff;
+    width: 3px;
+    height: 95%;
+    z-index: 1;
+}
+
+.meter-indicator {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+}
+
+#water-level {
+    background: url(https://image.ibb.co/fmHm66/wave.png);
+    background-position: 0px 350px;
+    background-repeat: repeat-x;
+    background-size: 100%;
+    animation: filling 10s ease-in-out infinite;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    background-color: #0378ad;
+    height: 50%;
+    width: 100%;
+    z-index: 0;
+}
+
+@keyframes filling {
+    50% {background-position: 3000px 0px;}
+    100% {background-position: 6000px 350px;}
+  }
+
+
+#tankspy-sensor {
+    height: 40%;
+    margin: 0px auto 0px auto;
+    color: #fff;
+}
+
+#tankspy-sensor > img {
+    display: block;
+    height: 100%;
+    margin: auto;
+}
+
+#tankspy-receiver {
+    height: 40%;
+    margin: 0px auto 0px auto;
+    color: #fff;
+}
+
+#tankspy-receiver > img {
+    display: block;
+    height: 100%;
+    margin: auto;
+}
+
+#tankspy-description {
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+}
+
+#tankspy-description > div {
+    width: 60%;
+    margin: 60px auto 0px auto;
+    color: #1e1e1e;
+    text-align: center;
+    font-size: 22px;
+}
+
+#ultrasonic-signal {
+    width: 50%;
+    margin: auto;
+}
+
+#ultrasonic-signal > img {
+    width: 100%;
+}
+
+
+#transmission-signal {
+    position: absolute;
+    top: 15%;
+    width: 25%;
+
+}
+
+#transmission-signal > img {
+    width: 100%;
+}
+
+#video-holder {
+    width: 100%;
+}
+
+
+#page-wrapper {
+    padding-top: 200px;
+}
+
+#page-wrapper .desc {
+    margin-top: 40px;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.page-title-wrapper .title.large {
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    text-align: center; margin: 1em 0;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.frame > img {
+    vertical-align: middle;
+    width: 70%;
+}
+
+.bg-grey {
+    background-color: #212529;
+    color: #fff;
+}
+
+.specification-list {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.specification-list tr {
+    border-bottom: 1px solid #212529;
+}
+
+.specification-list td {
+    padding: 15px 0px 15px 0px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#footer {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.error-logo {
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 200px;
+}
+.error-title {
+    color: #1e1e1e;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+
+.error-desc {
+    text-align: center;
+}
+
+#tankspy-overview {
+    margin-top: -50px;
+}
+/*
+     FILE ARCHIVED ON 19:27:30 Jan 28, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:22:29 Jul 15, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 122.238
+  exclusion.robots: 0.096
+  exclusion.robots.policy: 0.083
+  cdx.remote: 0.07
+  esindex: 0.011
+  LoadShardBlock: 77.265 (3)
+  PetaboxLoader3.datanode: 101.638 (5)
+  load_resource: 135.59
+  PetaboxLoader3.resolve: 72.642
+  loaddict: 49.394
+*/
