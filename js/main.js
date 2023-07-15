@@ -13,8 +13,7 @@ function adjustToScreenSize(){
 
     // Individual page height
     var clientHeight = $(window).height()
-    var clientWidth = $(window).outerWidth()
-    $('.page').css('min-height', clientHeight)
+    $('.page').css('height', clientHeight)
 
     // center-title-widget vertical center align
     var widgetHeight = $('.centered-title-widget').height()
@@ -26,15 +25,15 @@ function adjustToScreenSize(){
     var _meterOffset = (clientHeight - meterHeight) / 2
     $('#level-meter').css('top', _meterOffset)
     
-    meterEvenSpace()
+    // meterEvenSpace()
 }
 
-function meterEvenSpace() {
-    var meterHeight = $('#level-meter').height()
-    var spacing = meterHeight / 10;
-    $(".meter-indicator").css('top', function() {
-        return $(this).index() * spacing
-      })
+// function meterEvenSpace() {
+//     var meterHeight = $('#level-meter').height()
+//     var spacing = meterHeight / 10;
+//     $(".meter-indicator").css('top', function() {
+//         return $(this).index() * spacing
+//       })
 
-}
+// }
 

@@ -63,7 +63,15 @@
         letter-spacing: 1px;
     }
 
-    #right-half {
-        display: none;
+    .page {
+        text-align: center;
+    }
+
+    #page-wrapper {
+        margin-top: 200px;
+    }
+
+    .specification-list {
+        max-width: 100%;
     }
   }

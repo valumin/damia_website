@@ -1,6 +1,5 @@
 /* Font Import */
-@import url('https://web.archive.org/web/20220128192730cs_/https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;900&display=swap');
-@import url('https://web.archive.org/web/20220128192730cs_/https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;900&display=swap');
 
 body {
     font-family: 'Cairo', sans-serif;
@@ -18,30 +17,24 @@ nav {
 
 nav ul {
     padding: 0;
-    margin-top: 20px;
     float: right;
 }
 
 nav ul > li {
     display: inline-block;
     margin-left: 50px;
+    margin-top: 35px;
 }
 nav ul > li > a {
-    font-family: 'Open Sans';
-    display: inline-block;
-    color: #FFFFFFB3;
+    color: #000000;
     text-decoration: none;
     font-weight: 400;
     font-size: 20px;
-    padding: 5px 8px;
-    border-radius: 3px;
-    transition: transform 0.3s, padding 0.3s, background-color 0.3s;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    transition: all 0.3s;
 }
 nav ul > li > a:hover {
-    background-color: #FFFFFF33;
-    transform: translateY(5px);
-    color: #FFFFFFB3;
+    color: #0378ad;
 }
 
 .site-logo {
@@ -57,13 +50,7 @@ nav ul > li > a:hover {
 .page {
     box-sizing: border-box;
     padding: 55px 0px 0px 0px;
-    min-height: 100vh;
-}
-
-.dynamic-page {
-    box-sizing: border-box;
-    padding: 55px 0px 150px 0px;
-    height: auto;
+    height: 100vh;
 }
 
 .centered-title-widget {
@@ -71,15 +58,12 @@ nav ul > li > a:hover {
 }
 
 .centered-title-widget > h1 {
-    color: #fff;
     font-weight: 900;
     text-transform: uppercase;
 }
 
 .centered-title-widget > p {
-    color: #fff;
-    font-weight: 300;
-    font-family: 'Open Sans';
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: -20px;
@@ -89,6 +73,7 @@ nav ul > li > a:hover {
     color: #fff;
     text-align: left;
     width: 50%;
+    margin: auto;
 }
 
 .tankspy-title-widget > h1 {
@@ -114,7 +99,6 @@ nav ul > li > a:hover {
     font-weight: 900;
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-top: 50px;
 }
 
 .video-title-widget > p {
@@ -128,19 +112,18 @@ nav ul > li > a:hover {
 .framed-button {
     display: inline-block;
     outline: none;
-    border: 2px solid #fff;
+    border: 2px solid #000000;
     font-size: 22px;
     text-transform: uppercase;
     padding: 10px 35px;
     margin-top: 5%;
-    color: #fff;
+    color: #000000;
     text-decoration: none;
-    border-radius: 3px;
     transition: all 0.3s;
 }
 .framed-button:hover {
-    color: #fff;
-    background-color: rgba(255,255,2550,0.2);
+    border-color: #0378ad;
+    color: #0378ad;
 }
 .framed-button.light {
     border-color: #fff;
@@ -152,18 +135,20 @@ nav ul > li > a:hover {
     color: #fff;
     background-color: rgba(255,255,2550,0.2);
 }
+
+.white-bg {
+    background-color: #fff;
+}
 #pageOne {
-    background-color: #1e1e1e;
-    background-image: url('/web/20220128192730im_/https://damia.tech/assets/images/circuit-board-diagram-01.svg');
+    background-image: url('../assets/images/circuit-board-diagram-01.svg');
     background-position: bottom right 25%;
     background-repeat: no-repeat;
     background-size: 50%;
 }
 
 #pageTwo {
-    position: relative;
-    background-color: #0378ad;
-    padding: 120px 0px 200px 0px;
+    background-color: #e2e2e2;
+    padding-top: 0;
 }
 
 .container-split {
@@ -173,20 +158,6 @@ nav ul > li > a:hover {
     float: left;
     padding: 55px 0px 0px 0px;
     margin: 0;
-}
-
-#tankspy-image {
-    margin-top: 50px;
-    max-width: 70%;
-}
-
-#tankspy-page {
-    margin-top: 80px;
-    width: 50%;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    height: 30vh;
 }
 
 #tank-half {
@@ -200,7 +171,6 @@ nav ul > li > a:hover {
     background-color: #fff;
     width: 3px;
     height: 95%;
-    z-index: 1;
 }
 
 .meter-indicator {
@@ -213,27 +183,25 @@ nav ul > li > a:hover {
 }
 
 #water-level {
-    background: url(https://image.ibb.co/fmHm66/wave.png);
+    background: url('/assets/images/wave.png');
     background-position: 0px 350px;
     background-repeat: repeat-x;
-    background-size: 100%;
-    animation: filling 10s ease-in-out infinite;
-
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    background-size: contain;
+    animation: filling 10s ease-in-out infinite alternate;
     position: absolute;
     bottom: 0;
-    background-color: #0378ad;
     height: 50%;
     width: 100%;
-    z-index: 0;
 }
 
 @keyframes filling {
-    50% {background-position: 3000px 0px;}
-    100% {background-position: 6000px 350px;}
+    from {
+        background-position: 0px 100%;
+    }
+    to {
+        background-position: 4000px 100%;
+    }
   }
-
 
 #tankspy-sensor {
     height: 40%;
@@ -301,7 +269,9 @@ nav ul > li > a:hover {
 
 
 #page-wrapper {
-    padding-top: 200px;
+    box-sizing: border-box;
+    padding: 55px 0px 0px 0px;
+    min-height: 100vh;
 }
 
 #page-wrapper .desc {
@@ -336,12 +306,15 @@ nav ul > li > a:hover {
 .bg-grey {
     background-color: #212529;
     color: #fff;
+    height: auto !important;
+    padding-top: 100px !important;
 }
 
 .specification-list {
     margin-top: 50px;
     width: 100%;
     max-width: 400px;
+    text-align: left;
 }
 
 .specification-list tr {
@@ -377,28 +350,3 @@ nav ul > li > a:hover {
 .error-desc {
     text-align: center;
 }
-
-#tankspy-overview {
-    margin-top: -50px;
-}
-/*
-     FILE ARCHIVED ON 19:27:30 Jan 28, 2022 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 11:22:29 Jul 15, 2023.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 122.238
-  exclusion.robots: 0.096
-  exclusion.robots.policy: 0.083
-  cdx.remote: 0.07
-  esindex: 0.011
-  LoadShardBlock: 77.265 (3)
-  PetaboxLoader3.datanode: 101.638 (5)
-  load_resource: 135.59
-  PetaboxLoader3.resolve: 72.642
-  loaddict: 49.394
-*/

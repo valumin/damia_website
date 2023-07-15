@@ -14,4 +14,16 @@
     #tankspy-description > div {
         width: 70%;
     }
+
+    .page {
+        text-align: center;
+    }
+
+    #page-wrapper {
+        margin-top: 200px;
+    }
+
+    .specification-list {
+        max-width: 100%;
+    }
   }
