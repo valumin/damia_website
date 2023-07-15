@@ -1,0 +1,14 @@
+@media screen and (min-width: 1200px) {
+    .centered-title-widget > h1, .video-title-widget > h1 {
+        font-size: 5.5vw;
+    }
+    .centered-title-widget > p, .video-title-widget > p {
+        font-size: 1.3vw;
+    }
+    .tankspy-title-widget > h1 {
+        font-size: 5.5vw;
+    }
+    #page-wrapper {
+        padding-top: 200px;
+    }
+}

@@ -1,0 +1,46 @@
+
+.page-title-wrapper {
+    line-height: 1;
+}
+.page-title-wrapper.left-border {
+    border-left: 3px solid #d02027;
+    padding-left: 25px;
+}
+.page-title-wrapper .preheader {
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.page-title-wrapper .title {
+    font-size: 60px;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    
+    .page-title-wrapper .title {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .page-title-wrapper .title {
+        font-size: 55px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .page-title-wrapper .title {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-title-wrapper .title {
+        font-size: 12vw;
+    }
+    
+}
